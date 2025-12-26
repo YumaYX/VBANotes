@@ -63,7 +63,7 @@ async fn process_rust_file(rs_path: &Path) -> io::Result<()> {
     // Rust コードブロック追加
     post_content.push_str("\n\n```vb\n");
     post_content.push_str(&rust_source);
-    post_content.push_str("```\n");
+    post_content.push_str("\n```\n");
 
     // Jekyll post 出力
     let output_path = build_post_path(&category, &file_name);
@@ -115,7 +115,7 @@ fn prompt_to_describe_codes() -> String {
 - Write about the following Excel VBA codes in Japanese using markdown format.
 - In detail.
 - Just the answer.
-- プログラムの説明に加えて、サンプルや、使い道などを説明して。
+- dont use code block.
 - Start your response with 'このプログラムは'.
 "#
     .to_string()

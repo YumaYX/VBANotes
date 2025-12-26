@@ -24,6 +24,9 @@ clean:
 	cargo clean
 	rm -rf _posts/* _site
 
+reset: clean
+	rm -fv sample/*/*.md
+
 pub2: clean
 	cargo run
 	make pub

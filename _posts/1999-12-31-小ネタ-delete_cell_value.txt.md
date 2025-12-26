@@ -1,0 +1,22 @@
+---
+layout: post
+category: 小ネタ
+title: "delete_cell_value.txt"
+---
+
+<small>この文章はAIで生成しています。誤りが含まれることがあります。</small>
+
+このプログラムは、指定されたワークシートのすべてのセルをクリアするVBAコードです。具体的には、ワークシート内のすべてのセルに含まれるデータや書式設定を削除し、セルを空白状態に戻します。このコードは、ワークシートの初期化やデータのリセットが必要な場合に使用されます。VBAコードは以下の通りです。
+
+```vba
+Sub ClearAllCells()
+    Worksheets("Sheet1").Cells.Clear
+End Sub
+```
+
+このコードは、"Sheet1"という名前のワークシート内のすべてのセルをクリアします。ワークシートの名前を変更する場合は、`Worksheets("Sheet1")`の部分を適切なワークシート名に変更してください。
+
+```vb
+worksheet.Cells.clear
+
+```
