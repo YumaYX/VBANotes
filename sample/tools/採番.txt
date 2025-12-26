@@ -1,0 +1,6 @@
+Sub Saiban()
+  For i = 12 To 34
+    SendKeys (i)
+    SendKeys ("{DOWN}")
+  Next i
+End Sub

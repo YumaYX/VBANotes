@@ -1,0 +1,5 @@
+Sub f1 (ByVal str As String)
+  'Debug.Print(str)
+End Sub
+
+Call f1("hello")

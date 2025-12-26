@@ -1,0 +1,6 @@
+' プリンタのチェック
+MsgBox Application.ActivePrinter
+' プリンタの指定
+Application.ActivePrinter = ""
+' sheetの印刷
+ActiveSheet.PrintOut

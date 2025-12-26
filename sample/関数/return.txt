@@ -1,0 +1,3 @@
+Sub f1 () as String
+  f1 = "hello"
+End Sub

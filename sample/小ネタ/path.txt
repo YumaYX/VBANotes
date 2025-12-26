@@ -1,0 +1,3 @@
+Dim myFile As Variant
+myFile = Application.GetOpenFilename("すべてのファイル(*.*),*.*")
+MsgBox myFile

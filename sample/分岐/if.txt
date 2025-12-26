@@ -1,0 +1,7 @@
+If 条件 Then
+    '処理
+ElseIf 条件 Then
+    '処理
+Else
+    '処理
+End if

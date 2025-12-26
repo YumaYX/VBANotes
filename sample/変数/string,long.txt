@@ -1,0 +1,5 @@
+Dim str As String
+Dim str As String: str = "abcd"
+
+Dim l As long
+Dim l As long: l = 1

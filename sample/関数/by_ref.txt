@@ -1,0 +1,6 @@
+Sub f2 (ByRef str As String)
+  'Debug.Print(str)
+End Sub
+
+str="hello"
+r = f2(str)

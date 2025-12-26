@@ -1,0 +1,6 @@
+Dim str As String: str = "filename"
+If Dir(str) <> "" Then
+    MsgBox "有り"
+Else
+    MsgBox "無し"
+End If

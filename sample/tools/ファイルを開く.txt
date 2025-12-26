@@ -1,0 +1,9 @@
+' 選択式
+Dim filename As String
+filename = Application.GetOpenFilename(FileFilter:="Excelファイル,*.xls*,CSVファイル,*.csv")
+
+' 選択式（続き）、プログラム内 
+Dim wb As Workbook
+Set wb = Workbooks.Open(filename)
+' 処理
+wb.Close

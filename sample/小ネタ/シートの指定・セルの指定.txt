@@ -1,0 +1,9 @@
+Dim wb As Workbook
+Dim ws As Worksheet
+Set ws = wb.Sheets("SheetName")
+' wsには、Sheets("SheetName")が代入されるわけではなく、
+' wsには、wb.Sheets("SheetName")が代入されている。
+' wb.wsとは書けない。
+Debug.Print (ws.Cells(1,1).Value)
+'または
+Debug.Print (wb.Worksheets(ws.Name).Cells(1,1).Value)

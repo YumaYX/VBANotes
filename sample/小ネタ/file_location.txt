@@ -1,0 +1,9 @@
+'ドキュメントフォルダ下
+"book.xlsx" ' ファイル名のみ記載する
+' ".\book.xlsx"も同様にドキュメントフォルダ下
+
+'実行ファイルと同じ場所
+ThisWorkbook.Path & "book.xlsx"
+
+'絶対パス
+"C:\book.xlsx"

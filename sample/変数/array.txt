@@ -1,0 +1,8 @@
+Dim arr As Variant
+Dim f As Variant
+
+arr = Array("a", "b", "c")
+
+For Each f In arr
+    Debug.Print f
+Next f

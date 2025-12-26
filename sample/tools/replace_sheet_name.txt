@@ -1,0 +1,5 @@
+Dim i As Long
+For i = 1 To Worksheets.Count
+  sn = Worksheets(i).Name
+  Worksheets(i).Name = WorksheetFunction.Substitute(sn, "before", "after")
+Next

@@ -1,0 +1,3 @@
+sheet_name = "Sheet Name"
+Worksheets(sheet_name).Cells(Rows.Count, 1).End(xlUp).Row
+' 1 column

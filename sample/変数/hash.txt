@@ -1,0 +1,8 @@
+Dim dic as Object
+Set dic = CreateObject("Scripting.Dictionary")
+dic.Item(1) = "a"
+
+Dim k As Variant
+For Each k In dic
+    Debug.Print dic.Item(k)
+Next k

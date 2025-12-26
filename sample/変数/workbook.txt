@@ -1,0 +1,3 @@
+Dim wb as WorkBook
+Set wb = Workbooks("Book1.xlsx")
+Dim wb As Worksheet: Set wb = Workbooks("Book1.xlsx")
