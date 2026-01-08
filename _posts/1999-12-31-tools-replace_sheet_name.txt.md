@@ -1,0 +1,25 @@
+---
+layout: post
+category: tools
+title: "replace_sheet_name.txt"
+---
+
+<small>この文章はAIで生成しています。誤りが含まれることがあります。</small>
+
+このプログラムは、ExcelのVBAを使用して、ワークシートの名前を一括で変更するものです。以下の手順で動作します。
+
+1. **変数の宣言**: `i`という名前の変数を宣言し、数値として扱うことを指定します。
+2. **ループの開始**: `For`文を使って、ワークシートの数だけ繰り返します。
+3. **ワークシート名の取得**: `Worksheets(i).Name`で現在のワークシートの名前を取得します。
+4. **名前の変更**: `WorksheetFunction.Substitute`関数を使って、ワークシートの名前から「before」を「after」に置き換えます。
+5. **ループの終了**: `Next`でループを終了します。
+
+このプログラムを実行すると、すべてのワークシートの名前が「before」を「after」に置き換えられます。
+
+```vb
+Dim i As Long
+For i = 1 To Worksheets.Count
+  sn = Worksheets(i).Name
+  Worksheets(i).Name = WorksheetFunction.Substitute(sn, "before", "after")
+Next
+```
