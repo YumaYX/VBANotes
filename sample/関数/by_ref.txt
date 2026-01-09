@@ -3,4 +3,4 @@ Sub f2 (ByRef str As String)
 End Sub
 
 str="hello"
-r = f2(str)
+Call f2(str)
